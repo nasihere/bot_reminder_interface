@@ -1,0 +1,60 @@
+
+    .card {
+        min-width: 8rem;
+        min-height: 6rem;
+       
+        margin-right: 1vw;
+        margin-top: 1vh;
+        margin-left: 1vw;
+    }
+body {
+    background-image: url("assets/img/background.png");
+    background-repeat: repeat
+}
+.flex-grow-4 {
+    
+    flex-wrap:  wrap;
+
+}
+.flex-ver {
+    display: flex;           
+    flex-direction: column;
+    justify-content: left;
+}
+.flex-hor {
+    display: flex;           
+    flex-direction: row;
+    justify-content: left;
+}
+/* small screen */
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    .mar-auto {
+        margin: auto;
+    }
+    .pad-25-percent {
+        padding: 10%;
+    }
+    .login {
+        background-image: url("assets/img/signin-illustration.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+/* big screen */
+@media screen and (min-width: 1024px) { 
+    .mar-auto {
+        margin: auto;
+    }
+    .pad-25-percent {
+        padding: 25%;
+    }
+    .login {
+        background-image: url("assets/img/signin-illustration.png");
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+}
